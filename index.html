@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduBooks - Read in Nature</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h2><i class="fas fa-tree"></i> EduBooks</h2>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#books">Books</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Search books in nature...">
+                <button id="searchBtn"><i class="fas fa-search"></i></button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Read Among the Trees</h1>
+                <p>Immerse yourself in a peaceful library nestled deep within nature. Discover academic books and wisdom surrounded by tranquility.</p>
+                <a href="#books" class="btn"><i class="fas fa-leaf"></i> Explore Books</a>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="about" class="features">
+            <div class="feature-card">
+                <i class="fas fa-seedling feature-icon"></i>
+                <h3>Peaceful Atmosphere</h3>
+                <p>Read and learn without distractions in a calm nature environment.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-book-reader feature-icon"></i>
+                <h3>For Forest Scholars</h3>
+                <p>Curated learning materials to grow your knowledge naturally.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-campground feature-icon"></i>
+                <h3>Easy Access</h3>
+                <p>Seamlessly search and explore our knowledge woods.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-tree feature-icon"></i>
+                <h3>Organic Growth</h3>
+                <p>Up-to-date and reliable educational resources.</p>
+            </div>
+        </section>
+
+        <!-- Featured Books Section -->
+        <section id="books" class="featured-books">
+            <div class="section-header">
+                <h2><i class="fas fa-bookmark"></i> Featured Forest Books</h2>
+                <a href="#books" class="view-all">View All &rarr;</a>
+            </div>
+
+            <div class="book-grid" id="bookGrid">
+                <!-- Book Card 1 -->
+                <div class="book-card" data-title="computer science essentials" data-category="technology">
+                    <img src="images/book1.jpg" alt="Computer Science Essentials Book Cover">
+                    <div class="book-info">
+                        <span class="category-tag">Technology</span>
+                        <h3>Computer Science Essentials</h3>
+                        <p class="description">Computing</p>
+                        <button class="btn-details" onclick="showDetails('Computer Science Essentials')">View Details</button>
+                    </div>
+                </div>
+
+                <!-- Book Card 2 -->
+                <div class="book-card" data-title="web development fundamentals" data-category="web development">
+                    <img src="images/book2.jpg" alt="Web Development Fundamentals Book Cover">
+                    <div class="book-info">
+                        <span class="category-tag">Web Development</span>
+                        <h3>Web Development Fundamentals</h3>
+                        <p class="description">Computing</p>
+                        <button class="btn-details" onclick="showDetails('Web Development Fundamentals')">View Details</button>
+                    </div>
+                </div>
+
+                <!-- Book Card 3 -->
+                <div class="book-card" data-title="data science basics" data-category="data & analytics">
+                    <img src="images/book3.jpg" alt="Data Science Basics Book Cover">
+                    <div class="book-info">
+                        <span class="category-tag">Data & Analytics</span>
+                        <h3>Data Science Basics</h3>
+                        <p class="description">Data & Analytics</p>
+                        <button class="btn-details" onclick="showDetails('Data Science Basics')">View Details</button>
+                    </div>
+                </div>
+
+                <!-- Book Card 4 -->
+                <div class="book-card" data-title="business management" data-category="business">
+                    <img src="images/book4.jpg" alt="Business Management Book Cover">
+                    <div class="book-info">
+                        <span class="category-tag">Business</span>
+                        <h3>Business Management</h3>
+                        <p class="description">Business</p>
+                        <button class="btn-details" onclick="showDetails('Business Management')">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Section -->
+        <section id="newsletter" class="newsletter">
+            <h2>Join Our Forest Community </h2>
+            <p>Subscribe for fresh book recommendations, study advice, and updates.</p>
+            <form id="newsletterForm" novalidate>
+                <div class="form-group">
+                    <input type="email" id="emailInput" placeholder="Enter your email address">
+                    <button type="submit" class="btn">Subscribe</button>
+                </div>
+                <div id="newsletterMessage" class="message"></div>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>EduBooks</h3>
+                <p>EduBooks is a student-focused platform bringing academic learning closer to nature's harmony.</p>
+                <p class="copyright">&copy; 2026 EduBooks. All rights reserved.
+                    Powered by Forest Community
+                </p>
+                
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#books">Books</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+                <div class="legal-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Use</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
